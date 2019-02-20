@@ -45,8 +45,8 @@ html {
     color: #666;
 }
 
-section-dark {
-    background-color#282e34;
+.section-dark {
+    background-color: #282e34;
     color: #ddd;
 }
 
@@ -56,17 +56,43 @@ section-dark {
     width: 100%;
     text-align: center;
     color: #000;
-    font-size: 26px;
+    font-size: 28px;
     letter-spacing: 8px;
     text-transform: uppercase;
 }
 
 .ptext .border {
-    background-color: #111;
-    color: #fff;
+    /* background-color: #111; */
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
 .ptext .border.trans {
     background-color: transparent;
+}
+
+.wrapper {
+    width: 400px;
+    padding: 20px;
+    background: white;
+}
+
+.wrapper input[type=text],
+.wrapper input[type=email],
+textarea {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .section {
+        font-size: 30px;
+    }
+    .ptext .border {
+        background-color: #111;
+        color: white;
+    }
+    .pimg1 {
+        background-image: url('https://i.pinimg.com/originals/d4/fb/43/d4fb43054862c768921504199c78958b.jpg');
+        min-height: 100%;
+    }
 }
